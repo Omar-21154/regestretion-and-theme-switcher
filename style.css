@@ -18,6 +18,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    transition: all 0.25s ease;
 }
 
 html,body{
@@ -80,10 +81,15 @@ body{
 input:focus{
     outline:2px solid rgba(0,0,0,0.08);
     box-shadow:0 0 0 3px rgba(0,0,0,0.03);
+
 }
 
 input[aria-invalid="true"]{
     border-color:#c0392b;
+}
+input:hover{
+    border-color:#888;
+    border-radius: 8px;
 }
 
 button[disabled]{
@@ -113,6 +119,11 @@ button{
     transition:background-color 0.2s ease;
 }
 
+legend{
+    font-size:24px;
+    margin-bottom:10px;
+    border: none;
+}
 div{
     display:flex;
     flex-direction:column;
@@ -125,10 +136,16 @@ div{
 
 div:hover{
     box-shadow:0 4px 8px rgba(0,0,0,0.2);
+    border-radius:12px; 
+    label{
+        font-weight: bold;
+        color:#c0392b;
+    }
 }
 
 button:hover{
     background-color:var(--button-bg-hover);
+    border-radius: 8px;
 }
 
 .resault-container {
@@ -166,6 +183,6 @@ a {
     margin-top: 20px;
     font-size: 20px;
     font-weight: bold;
-    
+
 }
 
