@@ -37,7 +37,8 @@ body{
     gap:15px;
     height:100vh;
     text-transform:capitalize;
-    transition: background-color 0.25s ease, color 0.25s ease;
+    transition: background-color 0.25s ease, color 0.25s ease,;
+    
 }
 
 /* Topbar for toggle */
@@ -140,9 +141,12 @@ div:hover{
     
     input{
         border-radius: 100px;
+        transition: all 0.75s ease;
     }
     button{
         border-radius: 100px;
+        transition: all 1s ease;
+
     }
     label{
         font-weight: bold;
