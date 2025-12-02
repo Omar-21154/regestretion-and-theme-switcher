@@ -137,15 +137,21 @@ div{
 div:hover{
     box-shadow:0 4px 8px rgba(0,0,0,0.2);
     border-radius:12px; 
+    
+    input{
+        border-radius: 100px;
+    }
+    button{
+        border-radius: 100px;
+    }
     label{
         font-weight: bold;
-        color:#c0392b;
     }
 }
 
 button:hover{
     background-color:var(--button-bg-hover);
-    border-radius: 8px;
+    border-radius: 110px;
 }
 
 .resault-container {
