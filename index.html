@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="topbar">
+        <button id="themeToggle" aria-label="Toggle theme">☀️</button>
+    </header>
+
+    <main>
+        <form id="loginForm" novalidate>
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter username" required
+                    autocomplete="username" aria-describedby="usernameError">
+                <span id="usernameError" class="input-error" aria-live="polite"></span>
+                <label for="Id">User ID:</label>
+                <input type="text" id="Id" name="id" placeholder="Enter user id" required inputmode="numeric"
+                    pattern="\d+" aria-describedby="idError" autocomplete="off">
+                <span id="idError" class="input-error" aria-live="polite"></span>
+                <button type="submit" id="loginButton">Submit</button>
+            </div>
+
+        </form>
+    </main>
+</body>
+<script src="./script.js"></script>
+
+</html>
