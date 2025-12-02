@@ -1,7 +1,10 @@
 const resaultname = document.getElementById('resaultname');
 const resaultid = document.getElementById('resaultid');
-resaultname.textContent =`Username: ${localStorage.getItem('username')}`;
-resaultid.textContent =`Id: ${localStorage.getItem('password')}`;
+const themeToggle = document.getElementById('themeToggle');
+const bgColorPicker = document.getElementById('bgColorPicker');
+
+resaultname.textContent = `Username: ${localStorage.getItem('username')}`;
+resaultid.textContent = `Id: ${localStorage.getItem('password')}`;
 
 function applyTheme(theme) {
     if (theme === 'dark') document.documentElement.classList.add('dark');

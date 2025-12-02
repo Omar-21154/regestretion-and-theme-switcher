@@ -101,3 +101,4 @@ if (themeToggle) {
         updateThemeToggleText();
     });
 }
+
